@@ -381,21 +381,13 @@ img {
     font-size: 20px;
 }
 
-.share-icons ul li.twitter a:hover{
-	color: #55acef;
-}
-.share-icons ul li.facebook a:hover{
-	color: #4e69a2;
-}
-.share-icons ul li.pinterest a:hover{
-	color: #e6001a;
-}
-.share-icons ul li.instagram a:hover{
-	color: #cb1db2;
-}
-.share-icons ul li.google-plus a:hover{
-	color: #990502;
-}
+.share-icons ul li.twitter a:hover{	color: #55acef; }
+.share-icons ul li.facebook a:hover{ color: #4e69a2; }
+.share-icons ul li.pinterest a:hover{	color: #e6001a; }
+.share-icons ul li.linkedin a:hover{ color: #076292; }
+.share-icons ul li.instagram a:hover{	color: #cb1db2; }
+.share-icons ul li.google-plus a:hover{	color: #990502; }
+.share-icons ul li.youtube a:hover{ color: #ff0000; }
 /* ==============
     End Top Header CSS 
 ======================== */
@@ -2508,8 +2500,8 @@ a.pagi-number:hover, .pagination-area li.active a.pagi-number {
 .footer-top-area a:hover {
     color: #00299b;
 }
-.footer-wid {
-    text-align: center;
+.footer-wid .subscribe {
+    margin-left: 15%;
 }
 .footer-wid-title {
   color: #e1e1e1;
@@ -2543,39 +2535,47 @@ a.pagi-number:hover, .pagination-area li.active a.pagi-number {
 .subscribe button:hover {
     opacity: .5;
 }
+.footer-top-area .social-icos { padding-top: 10%; }
 .social-icos a {
-  background: #838b8c none repeat scroll 0 0;
-  border-radius: 50%;
-  border: 1px solid #838b8c;
-  color: #262829;
-  display: block;
-  font-size: 17px;
-  height: 34px;
-  line-height: 36px;
   width: 34px;
+  height: 34px;
+  display: block;
+  background: #838b8c none repeat scroll 0 0;
+  border: 2px solid #838b8c;
+  border-radius: 50%;
+  color: #262829;
+  font-size: 17px;
+  line-height: 30px;
 }
-.social-icos a:hover {
-    background: #00299b;
-}
+.social-icos a:hover {background: transparent;}
+
 .social-icos .twitter a:hover{
 	color: #55acef;
-  border: 1px solid #55acef;
+  border: 2px solid #55acef;
 }
 .social-icos .facebook a:hover{
 	color: #4e69a2;
-  border: 1px solid #4e69a2;
+  border: 2px solid #4e69a2;
 }
 .social-icos .pinterest a:hover{
 	color: #e6001a;
-  border: 1px solid #e6001a;
+  border: 2px solid #e6001a;
+}
+.social-icos .linkedin a:hover{
+	color: #076292;
+  border: 2px solid #076292;
 }
 .social-icos .instagram a:hover{
 	color: #cb1db2;
-  border: 1px solid #cb1db2;
+  border: 2px solid #cb1db2;
 }
 .social-icos .google-plus a:hover{
 	color: #990502;
-  border: 1px solid #990502;
+  border: 2px solid #990502;
+}
+.social-icos .youtube a:hover{
+	color: #ff0000;
+  border: 2px solid #ff0000;
 }
 .footer-copyright-area {
   background: #062b08;
@@ -3289,9 +3289,9 @@ li.parsley-required, #contact_send_status {
 }
 .contact-form-area {
     width: 100%;
-    padding-top: 7%;
-    padding-bottom: 5%;
+    padding: 5% 0;
     background-color: #a8f1b6;
+    
 }
 #contatc_form {
     width: 70%;
@@ -3311,4 +3311,19 @@ li.parsley-required, #contact_send_status {
 }
 /*=====================================
             End Of Contact Us
+=====================================*/
+/*=====================================
+            Privacy Policy
+=====================================*/
+.ather-container {background-color: #eaeaea;}
+.ather-container h2 {padding-bottom: 32px;}
+
+.ather-container .content-section p {
+    padding-bottom: 16px;
+    font-size: 15px;
+    line-height: 22px;
+    margin: 0px;
+}
+/*=====================================
+            End Of Privacy Policy
 =====================================*/

@@ -196,7 +196,15 @@
     
 }
 @media only screen and (max-width: 991px) {
-    .social-icos{ margin: 7% 0 5% 0; }
+    .footer-top-area { text-align: center; }
+    .footer-top-area .social-icos { padding: 0; }
+    .social-icos { margin: 5% 0; }
+    .footer-wid .subscribe { margin: 0; }
+    
+    .subscribe form { 
+        width: 60%;
+        margin: 0 auto;
+    }
 }
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 768px) {
@@ -377,8 +385,8 @@
     }
     .about-us .our-Mission { margin-top: 8%; }
     .subscribe { margin-top: 2%; }
-    .subscribe form {
-        width: 50%;
+    .subscribe form { 
+        width: 60%;
         margin: 0 auto;
     }
 }
@@ -397,6 +405,10 @@
         max-width: 215px;
         padding: 20px 0 0;
         width: 100%;
+    }
+    .subscribe form { 
+        width: 100%;
+        margin: 0 auto;
     }
 }
 @media only screen and (min-width: 460px) and (max-width: 768px) { 

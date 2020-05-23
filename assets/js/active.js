@@ -8,25 +8,27 @@ Version      : 1.1
     $(document).on('ready', function () {
         // MENU JS
         $(window).on('scroll', function () {
-            if ($(this).scrollTop() > 100) {
-                $('.main-menu-area-two').addClass('menu-shrink');
+            if ($(this).scrollTop() < 55) {
+                $('.main-menu-area').removeClass('affix');
+                $('.main-menu-area').addClass('affix-top');
             } else {
-                $('.main-menu-area-two').removeClass('menu-shrink');
+                $('.main-menu-area').removeClass('affix-top');
+                $('.main-menu-area').addClass('affix');
             }
         });			
 
         // Check distance to top and display back-to-top.
-        jQuery( window ).on('scroll', function() {
-            if ( $( this ).scrollTop() > 800 ) {
-                $( '.back-to-top' ).addClass( 'show-back-to-top' );
+        jQuery(window).on('scroll', function() {
+            if ( $( this ).scrollTop() > 400 ) {
+                $('.back-to-top').addClass( 'show-back-to-top' );
             } else {
-                $( '.back-to-top' ).removeClass( 'show-back-to-top' );
+                $('.back-to-top').removeClass( 'show-back-to-top' );
             }
         });
 
         // Click event to scroll to top.
-        jQuery( '.back-to-top' ).on('click', function() {
-            $( 'html, body' ).animate( { scrollTop : 0 }, 800 );
+        jQuery('.back-to-top').on('click', function() {
+            $( 'html, body' ).animate( { scrollTop : 0 }, 400, 'swing');
             return false;
         });
     });
