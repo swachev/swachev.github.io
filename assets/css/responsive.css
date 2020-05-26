@@ -210,10 +210,10 @@
 @media only screen and (max-width: 768px) {
     .hover-green:hover { color: #cacaca; }
     .container { width: 85%; }
-    .memberlist li { width: calc(95%/2 - 5px); }
+    .memberlist li { width: calc(95%/2 + 2px); }
     .memberlist li:nth-child(2n){ margin-right: 0; }
     .memberlist li:nth-child(3n),
-    .memberlist li:nth-child(6n) { margin-right: 1%; }
+    .memberlist li:nth-child(6n) { margin-right: 1.4%; }
     .teamModal {
         width: 86.5%;
         bottom: 38%;
@@ -383,12 +383,13 @@
         line-height: 35px;
         margin-top: 40px;
     }
-    .about-us .our-Mission { margin-top: 8%; }
+    .about-us .our-Mission { padding-top: 10% !important; }
     .subscribe { margin-top: 2%; }
     .subscribe form { 
         width: 60%;
         margin: 0 auto;
     }
+    .ather-container { padding-top: 25%; }
 }
 
 @media only screen and (max-width: 459px) {
@@ -464,6 +465,7 @@
     }
     .main-menu-area .navbar-default .navbar-toggle {
         display: block;
+        margin-top: 1%;
     }
     .main-menu-area .navbar-default .navbar-collapse {
         background-color: #fff;
@@ -554,12 +556,17 @@
 }
 @media only screen and (max-width: 450px) {
     .teamModal {
-        width: 86.5%;
-        top: 12%;
+        width: 90%;
+        top: 15%;
         bottom: 5%;
-        left: 4%;
+        left: 5%;
         text-align: center;
     }
+    .teamModal .memberImg, .teamModal .figureCaption { 
+        width: 100%;
+        text-align: center; 
+    }
+    .teamModal .ib { display: block; }    
 }
 @media only screen and (max-width: 823px) and (orientation: landscape){
     .teamModal .speakersImg,

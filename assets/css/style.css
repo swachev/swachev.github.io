@@ -784,9 +784,6 @@ img {
         border: none;
         background: #333;
     }
-    .navbar-default .navbar-toggle:hover {
-        background: transparent !important;
-    }
     .navbar-default .navbar-toggle .icon-bar {
         width: 22px;
         transition: all 0.2s;
@@ -2581,7 +2578,7 @@ a.pagi-number:hover, .pagination-area li.active a.pagi-number {
   background: #062b08;
   color: #838b8c;
   padding: 15px 0;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 400;
 }
 .footer-copyright-area a {
